@@ -1,4 +1,7 @@
 @import "tailwindcss";
-body{
+/* body{
     background-color: rgba(17, 132, 240, 0.693);
+} */
+.active{
+    border-bottom: 2px solid greenyellow;
 }

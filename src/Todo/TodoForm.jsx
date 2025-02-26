@@ -16,7 +16,7 @@ const TodoForm = ({ onAddToDo }) => {
   return (
     <section>
       <form onSubmit={handleFormSubmit}>
-        <div className='flex justify-center my-10'>
+        <div className='flex justify-center my-5'>
           <div className='w-140 h-15 relative flex'>
             <input
               type="text"

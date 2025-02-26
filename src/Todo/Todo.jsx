@@ -10,9 +10,9 @@ const storageKey = "todosKey";
 
 const Todo = () => {
     // const [inputValue, setInputValue] = useState('')
-    const [task, setTask] = useState(()=> {
+    const [task, setTask] = useState(() => {
         const rowTodos = localStorage.getItem(storageKey)
-        if(!rowTodos) return [];
+        if (!rowTodos) return [];
         return JSON.parse(rowTodos);
     })
 
@@ -55,7 +55,7 @@ const Todo = () => {
     return (
         <section>
             <header>
-                <h1 className='text-center mt-10 bg-green-500 mx-20 rounded-4xl text-white text-2xl py-2 font-bold'>Todo List</h1>
+                <h1 className='text-center mt-10 bg-green-500 mx-90 rounded-4xl text-white text-2xl py-2 font-bold'>Todo List</h1>
 
                 <TodoDateTime setInterval={setInterval} />
 
@@ -82,7 +82,8 @@ const Todo = () => {
             <div className='flex justify-center items-centerm-2 p-2'>
                 <button
                     onClick={handleClearAll}
-                    className='flex justify-center items-center bg-red-500 h-10 w-20 rounded-lg text-white'>Clear All</button>
+                    className='flex justify-center items-center bg-red-500 h-10 w-20 rounded-lg text-white mb-30'>Clear All
+                </button>
             </div>
         </section>
     )

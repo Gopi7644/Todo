@@ -7,6 +7,7 @@ import Layout from './Layout/Layout'
 import Home from './components/Home'
 import './App.css'
 import Error from './Error'
+import TodoTwo from './todoWithChaiCode/TodoTwo'
 
 function App() {
   const router = createBrowserRouter([
@@ -35,15 +36,16 @@ function App() {
           element: <Support />,
         },
         {
+          path: '/TodoTwo',
+          element: <TodoTwo />,
+        },
+        {
           path: '*',
           element: <Error />,
         },
       ],
     },
-    
   ])  
-
-
 
   return <RouterProvider router={router}/>
 }
